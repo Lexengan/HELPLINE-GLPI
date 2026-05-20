@@ -3,19 +3,48 @@
   <name>Helpline WebService</name>
   <key>helpline</key>
   <state>stable</state>
+  <logo></logo>
   <description>
-    <long><![CDATA[Plugin d'intégration Genesys/ITSM pour GLPI — expose des routes API HL pour la gestion des tickets depuis le Centre de Contacts.]]></long>
+    <short>
+      <en>Genesys/ITSM integration plugin for GLPI — exposes HL API routes for ticket management from the Contact Center.</en>
+      <fr>Plugin d'intégration Genesys/ITSM pour GLPI — expose des routes API HL pour la gestion des tickets depuis le Centre de Contacts.</fr>
+    </short>
+    <long>
+      <en>Genesys/ITSM integration plugin for GLPI — exposes HL API routes for ticket management from the Contact Center.</en>
+      <fr>Plugin d'intégration Genesys/ITSM pour GLPI — expose des routes API HL pour la gestion des tickets depuis le Centre de Contacts.</fr>
+    </long>
   </description>
-  <license>GPL v2+</license>
+  <homepage>https://github.com/Lexengan/HELPLINE-GLPI</homepage>
+  <download>https://github.com/Lexengan/HELPLINE-GLPI/releases</download>
+  <issues>https://github.com/Lexengan/HELPLINE-GLPI/issues</issues>
+  <readme>https://github.com/Lexengan/HELPLINE-GLPI/blob/main/README.md</readme>
+  <changelog>https://github.com/Lexengan/HELPLINE-GLPI/releases</changelog>
   <authors>
     <author>Helpline</author>
   </authors>
   <versions>
     <version>
       <num>2.0.0</num>
-      <download>https://github.com/Lexengan/HELPLINE-GLPI/releases/download/v2.0.0/helpline-2.0.0.tar.gz</download>
-      <minGlpiVersion>11.0.0</minGlpiVersion>
-      <maxGlpiVersion>12.0.0</maxGlpiVersion>
+      <compatibility>~11.0.0</compatibility>
+      <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/download/v2.0.0/helpline-2.0.0.tar.gz</download_url>
     </version>
   </versions>
+  <langs>
+    <lang>en_GB</lang>
+    <lang>fr_FR</lang>
+  </langs>
+  <license>GPL v2+</license>
+  <tags>
+    <en>
+      <tag>helpdesk</tag>
+      <tag>genesys</tag>
+      <tag>api</tag>
+    </en>
+    <fr>
+      <tag>helpdesk</tag>
+      <tag>genesys</tag>
+      <tag>api</tag>
+    </fr>
+  </tags>
+  <screenshots></screenshots>
 </root>
