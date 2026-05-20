@@ -3,7 +3,7 @@
   <name>Helpline WebService</name>
   <key>helpline</key>
   <state>stable</state>
-  <logo></logo>
+  <logo>https://raw.githubusercontent.com/Lexengan/HELPLINE-GLPI/main/logo%20HL%2040%2040.png</logo>
   <description>
     <short>
       <en>Genesys/ITSM integration plugin for GLPI — exposes HL API routes for ticket management from the Contact Center.</en>
@@ -46,5 +46,4 @@
       <tag>api</tag>
     </fr>
   </tags>
-  <screenshots></screenshots>
 </root>
