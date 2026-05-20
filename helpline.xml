@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <name>Helpline WebService</name>
+  <key>helpline</key>
+  <state>stable</state>
+  <description>
+    <long><![CDATA[Plugin d'intégration Genesys/ITSM pour GLPI — expose des routes API HL pour la gestion des tickets depuis le Centre de Contacts.]]></long>
+  </description>
+  <license>GPL v2+</license>
+  <authors>
+    <author>Helpline</author>
+  </authors>
+  <versions>
+    <version>
+      <num>2.0.0</num>
+      <download>https://github.com/Lexengan/HELPLINE-GLPI/releases/download/v2.0.0/helpline-2.0.0.tar.gz</download>
+      <minGlpiVersion>11.0.0</minGlpiVersion>
+      <maxGlpiVersion>12.0.0</maxGlpiVersion>
+    </version>
+  </versions>
+</root>
