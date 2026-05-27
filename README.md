@@ -166,6 +166,8 @@ Base URL : `https://<host>/api.php/v2/Helpline/<action>`
 | S-10 | Bypass liste blanche IPv6 | `ipMatchesCidr()` gère IPv4 et IPv6 via `inet_pton()` |
 | S-11 | Coercions PHP silencieuses | `declare(strict_types=1)` dans tous les fichiers |
 | S-12 | `echo` dans `check_prerequisites` | `Session::addMessageAfterRedirect()` |
+| SEC-11 | Droits insuffisants sur un item spécifique (TECLIB) | `canUpdateItem()` / `canViewItem()` sur chaque ticket manipulé |
+| SEC-12 | Accès à une entité non autorisée (TECLIB) | `Session::haveAccessToEntity()` avant création de ticket |
 
 ## Structure du plugin
 
@@ -194,28 +196,28 @@ helpline/
 ```
 
 ## Développement
- 
+
 ### Règle PSR-12 — ordre obligatoire dans chaque fichier PHP
- 
+
 ```php
 <?php
- 
+
 declare(strict_types=1);
- 
+
 namespace GlpiPlugin\Helpline;
- 
+
 use ClassA;
 use ClassB;
- 
+
 /**
  * Docblock de classe — description, annotations @since, @author, etc.
  */
 class MaClasse
 {
 ```
- 
+
 Ordre absolu — ne jamais déroger :
- 
+
 | Position | Élément | Ligne vide après |
 |----------|---------|-----------------|
 | 1 | `<?php` | Oui |
@@ -224,7 +226,7 @@ Ordre absolu — ne jamais déroger :
 | 4 | blocs `use` | Oui |
 | 5 | Docblock `/** ... */` | **Non** — directement attaché à `class` |
 | 6 | `class` / `final class` | — |
- 
+
 Règles clés :
 - Le docblock est sur la **classe**, pas sur le fichier
 - Le docblock est **directement attaché** à `class` — aucune ligne vide entre `*/` et `class`
@@ -268,7 +270,9 @@ cd /var/www/glpi && php bin/console cache:clear --allow-superuser
 |----------|--------|
 | Configuration sans accès SSH | ✅ Via onglet GLPI natif (Twig) |
 | Aucune requête SQL brute | ✅ `$DB->request()` exclusivement |
-| Contrôle des droits sur toutes les routes | ✅ `Session::haveRight('ticket', UPDATE)` |
+| Contrôle des droits global sur toutes les routes | ✅ `Session::haveRight('ticket', UPDATE)` |
+| Contrôle des droits par item (TECLIB) | ✅ `canUpdateItem()` / `canViewItem()` sur chaque ticket |
+| Contrôle d'accès à l'entité (TECLIB) | ✅ `Session::haveAccessToEntity()` avant création |
 | Pas de fichiers front/ajax non protégés | ✅ Plugin 100% API HL |
 | Twig obligatoire pour les formulaires | ✅ `templates/config.html.twig` |
 | Contrôleur dans `src/Controller/` | ✅ `src/Controller/ApiController.php` |
@@ -300,6 +304,5 @@ cd /var/www/glpi && php bin/console cache:clear --allow-superuser
 
 | Document | Contenu |
 |----------|---------| 
-| [Documentation développeur GLPI](https://glpi-developer-documentation.readthedocs.io/) | Standards de développement GLPI 11 |
 | [PSR-12](https://www.php-fig.org/psr/psr-12/) | Standard de codage PHP appliqué |
 | [Catalogue plugins GLPI](https://plugins.glpi-project.org) | Publication du plugin |
