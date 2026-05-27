@@ -10,8 +10,8 @@
       <fr>Plugin d'intégration Genesys/ITSM pour GLPI — expose des routes API HL pour la gestion des tickets depuis le Centre de Contacts.</fr>
     </short>
     <long>
-      <en>Genesys/ITSM integration plugin for GLPI — exposes HL API routes for ticket management from the Contact Center.</en>
-      <fr>Plugin d'intégration Genesys/ITSM pour GLPI — expose des routes API HL pour la gestion des tickets depuis le Centre de Contacts.</fr>
+      <en>REST API plugin for GLPI 11. Exposes atomic endpoints for Genesys Cloud integration: user lookup, ticket creation (parent/child incidents), followup, status check and closure. One Genesys action = one HTTP request = one JSON response.</en>
+      <fr>Plugin API REST pour GLPI 11. Expose des endpoints atomiques pour l'intégration Genesys Cloud : identification utilisateur, création de tickets (incidents majeurs / fils), suivi, statut et clôture. 1 action Genesys = 1 requête HTTP = 1 réponse JSON.</fr>
     </long>
   </description>
   <homepage>https://github.com/Lexengan/HELPLINE-GLPI</homepage>
@@ -23,6 +23,16 @@
     <author>Helpline</author>
   </authors>
   <versions>
+    <version>
+      <num>2.3.0</num>
+      <compatibility>~11.0.0</compatibility>
+      <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/download/v2.3.0/helpline-2.3.0.tar.gz</download_url>
+    </version>
+    <version>
+      <num>2.1.0</num>
+      <compatibility>~11.0.0</compatibility>
+      <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/download/v2.1.0/helpline-2.1.0.tar.gz</download_url>
+    </version>
     <version>
       <num>2.0.1</num>
       <compatibility>~11.0.0</compatibility>
