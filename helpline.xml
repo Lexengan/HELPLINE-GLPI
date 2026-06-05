@@ -1,11 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-    Plugin Helpline WebService — Fichier de description pour le catalogue GLPI.
-    À soumettre sur : https://plugins.glpi-project.org
-
-    EC-12 — Fichier XML catalogue ajouté (obligatoire pour publication).
-    Source : MO §5.12
--->
 <root>
     <name>Helpline WebService</name>
     <key>helpline</key>
@@ -31,32 +24,32 @@
     <versions>
         <version>
             <num>2.4.0</num>
-            <compatibility>11.0</compatibility>
+            <compatibility>11</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.4.0</download_url>
         </version>
         <version>
             <num>2.3.0</num>
-            <compatibility>11.0</compatibility>
+            <compatibility>11</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.3.0</download_url>
         </version>
         <version>
             <num>2.2.0</num>
-            <compatibility>11.0</compatibility>
+            <compatibility>11</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.2.0</download_url>
         </version>
         <version>
             <num>2.1.2</num>
-            <compatibility>11.0</compatibility>
+            <compatibility>11</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.1.2</download_url>
         </version>
         <version>
             <num>2.1.0</num>
-            <compatibility>11.0</compatibility>
+            <compatibility>11</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.1.0</download_url>
         </version>
         <version>
             <num>2.0.1</num>
-            <compatibility>11.0</compatibility>
+            <compatibility>11</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.0.1</download_url>
         </version>
     </versions>
