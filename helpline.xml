@@ -24,32 +24,32 @@
     <versions>
         <version>
             <num>2.4.0</num>
-            <compatibility>11</compatibility>
+            <compatibility>11.0</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.4.0</download_url>
         </version>
         <version>
             <num>2.3.0</num>
-            <compatibility>11</compatibility>
+            <compatibility>11.0</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.3.0</download_url>
         </version>
         <version>
             <num>2.2.0</num>
-            <compatibility>11</compatibility>
+            <compatibility>11.0</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.2.0</download_url>
         </version>
         <version>
             <num>2.1.2</num>
-            <compatibility>11</compatibility>
+            <compatibility>11.0</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.1.2</download_url>
         </version>
         <version>
             <num>2.1.0</num>
-            <compatibility>11</compatibility>
+            <compatibility>11.0</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.1.0</download_url>
         </version>
         <version>
             <num>2.0.1</num>
-            <compatibility>11</compatibility>
+            <compatibility>11.0</compatibility>
             <download_url>https://github.com/Lexengan/HELPLINE-GLPI/releases/tag/v2.0.1</download_url>
         </version>
     </versions>
